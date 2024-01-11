@@ -55,6 +55,7 @@ sidebar = html.Div(
                 dbc.NavLink("Accueil", href="/", active="exact"),
                 dbc.NavLink("Statistiques", href="/statistiques/", active="exact"),
                 dbc.NavLink("Explorez le graphe", href="/graphe", active="exact"),
+                dbc.NavLink("Graphe seul", href="/all/", active="exact")
             ],
             vertical=True,
             pills=True,
