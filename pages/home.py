@@ -19,7 +19,7 @@ layout = dbc.Container(
                         html.Hr(),
                         html.P(
                             """
-                            Les données sont les 3147 décisions de contrôle des concentrations publiées par l'Autorité de la concurrence entre 2009 et le 30 juin 2023.
+                            Les données sont les 3275 décisions de contrôle des concentrations publiées par l'Autorité de la concurrence entre 2009 et le 31 décembre 2023.
                             Les noeuds correspondent aux décisions. Les arêtes sont les citations entre les décisions.
                             Exemple: la décision 10-DCC-30 cite la décision 09-DCC-08, les deux noeuds sont donc reliés.
                             La taille des noeuds correspond au nombre de fois où les décisions sont citées par d'autres décisions: plus le noeud est grand, plus la décision est référencée.
@@ -53,7 +53,13 @@ layout = dbc.Container(
             ]
         ),
         html.Hr(),
-        html.Img(src=get_asset_url("graphe_dcc_avec_labels.png"))
+        html.H3("Version française"),
+        html.Hr(),
+        html.Img(src=get_asset_url("graphe_label_FR.png")),
+        html.Hr(),
+        html.H3("Version anglaise"),
+        html.Hr(),
+        html.Img(src=get_asset_url("graphe_label_EN.png"))
     ],
     fluid=True,
 )
