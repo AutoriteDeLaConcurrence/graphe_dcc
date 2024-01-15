@@ -18,7 +18,6 @@ SECTOR_COLOR_MAPPING = {sector: COLOL_PALETTE[i] for i, sector in enumerate(TOPI
 SECTOR_HTML = [html.Div([html.Span([f"{i+1}: {topic}\n"], style={"color": SECTOR_COLOR_MAPPING.get(topic)}), html.Br()]) for i, topic in enumerate(TOPICS_TXT)]
 moitie_secteur = len(SECTOR_HTML) // 2 + (len(SECTOR_HTML) % 2 > 0)
 
-# Il n'y a pas de mouyen plus propre de le créer ?
 DEF_STYLESHEET = [
     {"selector": f".{sector}", "style": {"background-color": SECTOR_COLOR_MAPPING[sector], "line-color": SECTOR_COLOR_MAPPING[sector]}}
     for sector in TOPICS_TXT

@@ -124,7 +124,7 @@ def display_hovered_node_info(node_data):
                     style={"border": "2px solid #ccc", "border-radius": "5px", "margin-top": "10px"},
                 )
     else:
-        return dbc.Card(style={"display": None})  # J'aurais mis une div ici. En fait ca ne sert à rien
+        return dbc.Card(style={"display": None})
 
 
 # Callback 2 : Main interaction when clicking on a node or edge
@@ -183,7 +183,6 @@ def display_nodedata(node_attr):
                 html.Div(title, className="card-title"),
                 html.Div(subtitle, className="card-subtitle"),
                 html.Div(body, className="card-text"),
-
             ]
         )
     )

@@ -74,7 +74,7 @@ layout = html.Div([
                                 ),
                                 html.Div(style={'height': '20px'}),
                                 dbc.Badge("OU", color="primary", className="mr-1"),
-                                html.Div(style={'height': '20px'}),  # Ca sert à quelque chose ca ?
+                                html.Div(style={'height': '20px'}),
                                 dbc.Badge("Sélectionnez directement une décision:", color="primary", className="mr-1"),
                                 html.Div([dcc.Dropdown(id="dropdown_node", options=[{'label': node, 'value': node} for node in unique_nodes])]),
                                 html.Div(style={'height': '20px'}),
@@ -134,7 +134,7 @@ def display_hovered_node_info(node_data):
                     style={"border": "2px solid #ccc", "border-radius": "5px", "margin-top": "10px"},
                 )
     else:
-        return dbc.Card(style={"display": None})  # J'aurais mis une div ici. En fait ca ne sert à rien
+        return dbc.Card(style={"display": None})
 
 
 # Callback 2 : Main interaction when clicking on a node or edge
